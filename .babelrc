@@ -1,0 +1,12 @@
+// This file is telling babel that whenever it is called upon, a webpack will be calling it, to user these libraries to transform our files,
+// and these libraries know what to do specifically to turn jsx files into a javascript files (in case of @babel/preset-react
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "targets": {
+                "node": "current"
+            }
+        }],
+        "@babel/preset-react"
+    ]
+}
